@@ -1,9 +1,9 @@
 public class problemset_three {
-public void main(String[]args) {
-    max(10,30,20);
-}
-//1
-        //a
+    public void main(String[]args) {
+        max(10,30,20);
+    }
+    //1
+    //a
     public int max ( int a, int b, int c){
 
         int resultA = Math.max(a, b);
@@ -21,18 +21,18 @@ public void main(String[]args) {
         }
 
     }
-        //b
+    //b
     public double average(int a, int b){
         return (((double)(a))+((double)(b)))/2;
     }
-        //c
+    //c
     public void displayNTimes(String a, int b){
         for(int i = 0; i <b; i++){
             System.out.println(a);
         }
 
     }
-        //d
+    //d
     public String getRepeatedMessage(String a, int b){
         String msg = "";
         for(int i = 0; i <b; i++){
@@ -40,12 +40,38 @@ public void main(String[]args) {
         }
         return msg;
     }
-//2
-        // a
+    //2
+    // a
     public int max(int a, int b, int c, int d){
         return Math.max(a, max(b,c,d));
     }
 
+    public int countFactor(int a){
+        int counter = 0;
+        for(int i =1; i<=a; i++){
+            if(a%i == 0){
+                counter++;
+            }
+        }
+        return counter;
+    }
 
+    public boolean isPrime(int n){
+        int a = countFactor(n);
+        if(a == 2){
+            return true;
+        }
+        return false;
+    }
+
+    public int findPrimeLargerThan(int n) {
+        int counter = n;
+        do {
+            counter++;
+
+        }while(isPrime(counter) == false);
+        return counter;
+
+    }
 
 }
