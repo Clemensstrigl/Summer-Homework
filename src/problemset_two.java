@@ -85,7 +85,7 @@ public class problemset_two {
             System.out.println("f(" + i + ") = " + ((2*(i*i*i)) - i +1));
         }
     }
-//6
+//6 (random jump from three to six)
     public void nestedLoop(){
         //a It will only display 5 on the same line five times\
         //b
